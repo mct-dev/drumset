@@ -1,5 +1,13 @@
-# hello there
+# Javascript Drumset
 
-## another
+Use your keyboard to make drumset noises!
 
-- well hi...
+## **Install**
+
+* `git clone`
+* `npm install`
+* `npm start`
+
+## **Notes**
+
+Designed using `parcel-bundler` for development purposes, so that's what `npm start` runs, but can also simply be run by opening the `index.html` file in your browser.
