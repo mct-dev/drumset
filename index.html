@@ -10,33 +10,54 @@
 </head>
 
 <body>
+  <div class="big-blur"></div>
+  <div class="mobile-banner">
+    <p>This project was not designed for mobile devices.</p>
+    <p>Please reload on a non-mobile device, or feel free to take a look at my source code.</p>
+  </div>
   <div class="keys">
     <div class="blur"></div>
-    <div data-key="65" class="key">
-      A
+    <div data-key="a" class="key">
+      <p>A</p>
+      <p class="desc">boom</p>
     </div>
-    <div data-key="83" class="key">
-      S
+    <div data-key="s" class="key">
+      <p>S</p>
+      <p class="desc">clap</p>
     </div>
-    <div data-key="68" class="key">
-      D
+    <div data-key="d" class="key">
+      <p>D</p>
+      <p class="desc">hihat</p>
     </div>
-    <div data-key="70" class="key">
-      F
+    <div data-key="f" class="key">
+      <p>F</p>
+      <p class="desc">kick</p>
     </div>
-    <div data-key="74" class="key">
-      J
+    <div data-key="j" class="key">
+      <p>J</p>
+      <p class="desc">openhat</p>
     </div>
-    <div data-key="75" class="key">
-      K
+    <div data-key="k" class="key">
+      <p>K</p>
+      <p class="desc">ride</p>
     </div>
-    <div data-key="76" class="key">
-      L
+    <div data-key="l" class="key">
+      <p>L</p>
+      <p class="desc">snare</p>
     </div>
-    <div data-key="59" class="key">
-      ;
+    <div data-key=";" class="key">
+      <p>;</p>
+      <p class="desc">tom</p>
     </div>
   </div>
+  <audio src="static/sounds/boom.wav" data-key="a"></audio>
+  <audio src="static/sounds/clap.wav" data-key="s"></audio>
+  <audio src="static/sounds/hihat.wav" data-key="d"></audio>
+  <audio src="static/sounds/kick.wav" data-key="f"></audio>
+  <audio src="static/sounds/openhat.wav" data-key="j"></audio>
+  <audio src="static/sounds/ride.wav" data-key="k"></audio>
+  <audio src="static/sounds/snare.wav" data-key="l"></audio>
+  <audio src="static/sounds/tom.wav" data-key=";"></audio>
   <script src="index.js"></script>
 </body>
 

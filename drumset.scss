@@ -1,33 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
 body {
   background: url("./static/crowd-bg.jpg") no-repeat, rgb(58, 58, 58);
   color: rgb(201, 175, 30);
-  font-size: 2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
   margin: 0;
   padding: 0;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: flex !important;
+}
+.mobile-banner {
+  display: none;
+  background-color: rgba(44, 44, 44, 0.658);
+  margin-top: 20vh;
+  padding: 10vh 10vw 10vh 10vw;
+  width: 80vw;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+  flex-wrap: wrap;
+  text-align: center;
+  p {
+    width: 100%;
+  }
+}
+.blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("./static/crowd-bg.jpg") center no-repeat;
+  filter: blur(5px);
+  z-index: -1;
+}
+.big-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("./static/crowd-bg.jpg") center no-repeat;
+  filter: blur(6px);
+  z-index: -1;
 }
 .keys {
   position: relative;
   display: flex;
   justify-content: center;
   margin-top: 50vh;
-
-  .blur {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url("./static/crowd-bg.jpg") center no-repeat;
-    filter: blur(5px);
-    z-index: -1;
-  }
+  padding: 0 5vw;
 
   .key {
     text-align: center;
-    margin: 0 30px;
-    padding: 30px 15px;
-    width: 80px;
+    margin: 0 auto;
+    padding: 20px;
+    min-width: 80px;
     background-color: rgba(54, 54, 54, 0.7);
+    transition: all 0.01s ease-in-out;
+
     &:hover {
       background-color: rgba(54, 54, 54, 0.9);
     }
+    p {
+      margin: 0 auto;
+    }
+    .desc {
+      padding-top: 10px;
+      font-size: 0.7rem;
+    }
+  }
+
+  .pressed {
+    background-color: rgba(54, 54, 54, 1);
+    box-shadow: 0 0 5px 2px rgb(201, 175, 30);
+    transform: scale(1.05);
   }
 }
